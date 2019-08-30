@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <setting name="jdbcTypeForNull" value="NULL" />
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+        <!-- NO_LOGGING  <setting name="logImpl" value="STDOUT_LOGGING" />-->
+    </settings>
+    <typeAliases>
+        <typeAlias alias="Integer" type="java.lang.Integer" />
+        <typeAlias alias="Long" type="java.lang.Long" />
+        <typeAlias alias="HashMap" type="java.util.HashMap" />
+        <typeAlias alias="LinkedHashMap" type="java.util.LinkedHashMap" />
+        <typeAlias alias="ArrayList" type="java.util.ArrayList" />
+        <typeAlias alias="LinkedList" type="java.util.LinkedList" />
+    </typeAliases>
+<!--    &lt;!&ndash; 配置mybatis运行环境 &ndash;&gt;-->
+<!--    <environments default="development">-->
+<!--    <environment id="development">-->
+<!--        &lt;!&ndash; type="JDBC" 代表使用JDBC的提交和回滚来管理事务 &ndash;&gt;-->
+<!--        <transactionManager type="JDBC"/>-->
+
+<!--        &lt;!&ndash; mybatis提供了3种数据源类型，分别是：POOLED,UNPOOLED,JNDI &ndash;&gt;-->
+<!--        &lt;!&ndash; POOLED 表示支持JDBC数据源连接池 &ndash;&gt;-->
+<!--        &lt;!&ndash; UNPOOLED 表示不支持数据源连接池 &ndash;&gt;-->
+<!--        &lt;!&ndash; JNDI 表示支持外部数据源连接池 &ndash;&gt;-->
+<!--        <dataSource type="POOLED">-->
+<!--            <property name="driver" value="${jdbc.driver}"/>-->
+<!--            <property name="url" value="${jdbc.databaseurl}"/>-->
+<!--            <property name="username" value="${jdbc.username}"/>-->
+<!--            <property name="password" value="${jdbc.password}"/>-->
+<!--        </dataSource>-->
+<!--    </environment>-->
+<!--    </environments>-->
+
+
+</configuration>
