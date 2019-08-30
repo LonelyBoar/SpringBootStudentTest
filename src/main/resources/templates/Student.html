@@ -5,10 +5,13 @@
     <title>学生页面</title>
 </head>
 <body>
-<table>
+<table  >
     <tr th:each="Students : ${StudentList}">
         <td><a href="#" th:text="${Students.getStudentName()}">StudentName ...</a></td>
         <td th:text="${Students.getSex()}">1</td><br>
+    </tr>
+    <tr>
+        <a href="/Student/addStudentView" >新增</a>
     </tr>
 </table>
 </body>

@@ -23,12 +23,19 @@ public class StudentController
     {
         ModelAndView mv = new ModelAndView();
          List<Student> StudentTemp =  _StudentService.getAll();
+        StudentTemp.add(new Student(){});
         mv.addObject("StudentList",StudentTemp);
         //要跳转的页面
-        mv.setViewName("/Student");
+        mv.setViewName("Student");
         return mv;
     }
 
+    @RequestMapping("/addStudentView")
+    public ModelAndView addStudentView()
+    {
+        ModelAndView mv = new ModelAndView("addStudent");
+        return  mv;
+    }
     @RequestMapping("/addStudent")
     public ModelAndView addStudent(Student _Student)
     {
@@ -36,8 +43,10 @@ public class StudentController
         ModelAndView mv = new ModelAndView();
         List<Student> StudentTemp =  _StudentService.getAll();
         mv.addObject("StudentList",StudentTemp);
+        mv.setViewName("Student");
         return  mv;
     }
+
     @RequestMapping("/deleteStudent")
     public ModelAndView deleteStudent(String id)
     {

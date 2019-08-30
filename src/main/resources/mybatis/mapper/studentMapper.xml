@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
         <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.mybatis.demo.dao.UserDao">
-<select id="getAll" resultType="com.mybatis.demo.model.User"  parameterType="java.lang.String" >
-    select * from user
-	   WHERE email = #{email};
+<mapper namespace="com.mybatis.demo.dao.StudentDao">
+<select id="getAll" resultType="com.mybatis.demo.model.Student"  >
+    select * from Student;
 </select>
+<insert id="addStudent"  >
+insert into Student values ('123',#{StudentName},#{Sex})
+</insert>
 </mapper>

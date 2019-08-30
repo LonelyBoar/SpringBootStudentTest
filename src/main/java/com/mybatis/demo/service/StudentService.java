@@ -16,7 +16,7 @@ public class StudentService
     public List<Student> getAll() {
         return _StudentDao.getAll();
     }
-    public boolean addStudent(Student student)
+    public int addStudent(Student student)
     {
         return _StudentDao.addStudent(student);
     }

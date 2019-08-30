@@ -8,7 +8,7 @@ public interface StudentDao
 {
     List<Student> getAll();
 
-    boolean addStudent(Student student);
+    int addStudent(Student studentInsert);
 
     boolean deleteStudentById(String id);
 
