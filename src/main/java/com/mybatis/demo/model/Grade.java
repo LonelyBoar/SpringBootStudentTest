@@ -4,7 +4,17 @@ public class Grade
 {
     public String GradeId;
     public String GradeName;
+
+    public String getGradeLevel() {
+        return GradeLevel;
+    }
+
+    public void setGradeLevel(String gradeLevel) {
+        GradeLevel = gradeLevel;
+    }
+
     public String GradeNuM;
+    public String GradeLevel;
 
     public String getGradeId() {
         return GradeId;
